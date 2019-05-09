@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt,fleqn]{article}
+\documentclass[a4paper,10pt]{book}
 \usepackage{polyglossia} 
 \setdefaultlanguage[babelshorthands=true]{russian}
 \setotherlanguage{english}
@@ -8,7 +8,7 @@
 
 \usepackage{xltxtra}
 \usepackage{microtype}
- 
+
 \usepackage{xcolor}
 \definecolor{darkblue}{HTML}{003153}
 \usepackage{graphicx}
@@ -37,18 +37,18 @@
 \patchcmd{\epigraph}{\@episource{#1}\\}{\@episource{#1}\\[\episourceskip]}{}{}
 \makeatother
 
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsfonts}
-
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, linkcolor=darkblue, citecolor=darkblue, filecolor=darkblue, urlcolor=darkblue}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead[LE,RO]{\thepage}
-\fancyhead[LO]{{\footnotesize ЦВЕТЫ ДЛЯ БАБУШКИ}}
-\fancyhead[RE]{{\footnotesize ЭМИЛЬ ХЕЛЬГАСОН}} 
+\fancyhead[LO]{{\small
+ЦВЕТЫ ДЛЯ БАБУШКИ
+}}
+\fancyhead[RE]{{\small
+ЭМИЛЬ ХЕЛЬГАСОН
+}} 
 \fancyfoot{}
 \fancypagestyle{plain}
 {
