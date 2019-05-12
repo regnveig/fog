@@ -4,7 +4,9 @@
 \setotherlanguage{english}
 \defaultfontfeatures{Ligatures=TeX,Mapping=tex-text}
 
+\usepackage{amsmath}
 \setmainfont{Linux Libertine}
+\setmonofont{Noto Mono}
 
 \usepackage{xltxtra}
 \usepackage{microtype}
@@ -27,6 +29,8 @@
 \newcommand{\razd}{~\\{\centering\Large\bfseries$\ast \ast \ast$\par}~\\}
 \newcommand{\spacing}{\textcolor{red}{\textbf{(разрыв)}}}
 \newcommand{\authornote}{\emph{"--- Прим. авт.}}
+
+\renewcommand{\texttt}[1]{\text}
 
 \usepackage{etoolbox}
 \AtBeginEnvironment{quote}{\itshape}
